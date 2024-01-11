@@ -1,11 +1,13 @@
 #include <iostream>
 #include "game.h"
 #include "textureManager.h"
-#include "gameObject.h"
-
-GameObject *player;
+#include "components.h"
+#include "vector2d.h"
 
 SDL_Renderer *Game::renderer = nullptr;
+
+Manager manager;
+auto &player(manager.addEntity());
 
 Game::Game()
 {
@@ -41,7 +43,9 @@ void Game::init(const char *title = "title", int xPos = SDL_WINDOWPOS_CENTERED, 
         }
         isRunning = true;
 
-        player = new GameObject("assets/sprites.png", 0, 0, 4, 0);
+        player.addComponent<TransformComponent>(100, 100);
+        player.addComponent<SpriteComponent>("assets/sprites.png");
+        player.addComponent<KeyboardController>();
     }
     else
     {
@@ -63,43 +67,18 @@ void Game::handleEvents()
     }
 
     // Get all keyboard events;
-    keyboardState = SDL_GetKeyboardState(&heldKeysLength);
-
-    if (keyboardState[SDL_SCANCODE_W])
-    {
-        std::cout << "W is held" << std::endl;
-        player->setYPos(-1);
-    }
-    if (keyboardState[SDL_SCANCODE_A])
-    {
-        std::cout << "A is held" << std::endl;
-        player->setXPos(-1);
-    }
-    if (keyboardState[SDL_SCANCODE_S])
-    {
-        std::cout << "S is held" << std::endl;
-        player->setYPos(1);
-    }
-    if (keyboardState[SDL_SCANCODE_D])
-    {
-        std::cout << "D is held" << std::endl;
-        player->setXPos(1);
-    }
-    if (keyboardState[SDL_SCANCODE_SPACE])
-    {
-        std::cout << "SPACE is held" << std::endl;
-    }
 }
 
 void Game::update()
 {
-    player->update();
+    manager.refresh();
+    manager.update();
 }
 
 void Game::render()
 {
     SDL_RenderClear(Game::renderer);
-    player->render();
+    manager.draw();
     SDL_RenderPresent(Game::renderer);
 }
 

@@ -1,20 +1,12 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
+            "type": "shell",
             "label": "build",
-            "command": "make",
-            "args": [],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}/build"
             },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "command": "cmake \"CMakeLists.txt\" ${workspaceFolder} && cmake --build .",
             "detail": "Build using CMake"
         }
     ],

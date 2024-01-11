@@ -1,0 +1,5 @@
+/Users/alexwaldmann/C++/Game/build/CMakeFiles/Game.dir
+/Users/alexwaldmann/C++/Game/build/CMakeFiles/package.dir
+/Users/alexwaldmann/C++/Game/build/CMakeFiles/package_source.dir
+/Users/alexwaldmann/C++/Game/build/CMakeFiles/edit_cache.dir
+/Users/alexwaldmann/C++/Game/build/CMakeFiles/rebuild_cache.dir

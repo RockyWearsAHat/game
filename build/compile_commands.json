@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/alexwaldmann/C++/Game/build",
+  "command": "/usr/bin/clang++  -I/Users/alexwaldmann/C++/Game/include/SDL2 -I/Users/alexwaldmann/C++/Game/src/EntityComponentSystem -I/Users/alexwaldmann/C++/Game/src/GameLib -I/Users/alexwaldmann/C++/Game/src/TextureSystem -I/Users/alexwaldmann/C++/Game/src -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -o CMakeFiles/Game.dir/src/main.cpp.o -c /Users/alexwaldmann/C++/Game/src/main.cpp",
+  "file": "/Users/alexwaldmann/C++/Game/src/main.cpp",
+  "output": "CMakeFiles/Game.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/alexwaldmann/C++/Game/build",
+  "command": "/usr/bin/clang++  -I/Users/alexwaldmann/C++/Game/include/SDL2 -I/Users/alexwaldmann/C++/Game/src/EntityComponentSystem -I/Users/alexwaldmann/C++/Game/src/GameLib -I/Users/alexwaldmann/C++/Game/src/TextureSystem -I/Users/alexwaldmann/C++/Game/src -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -o CMakeFiles/Game.dir/src/game.cpp.o -c /Users/alexwaldmann/C++/Game/src/game.cpp",
+  "file": "/Users/alexwaldmann/C++/Game/src/game.cpp",
+  "output": "CMakeFiles/Game.dir/src/game.cpp.o"
+},
+{
+  "directory": "/Users/alexwaldmann/C++/Game/build",
+  "command": "/usr/bin/clang++  -I/Users/alexwaldmann/C++/Game/include/SDL2 -I/Users/alexwaldmann/C++/Game/src/EntityComponentSystem -I/Users/alexwaldmann/C++/Game/src/GameLib -I/Users/alexwaldmann/C++/Game/src/TextureSystem -I/Users/alexwaldmann/C++/Game/src -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -o CMakeFiles/Game.dir/src/GameLib/vector2d.cpp.o -c /Users/alexwaldmann/C++/Game/src/GameLib/vector2d.cpp",
+  "file": "/Users/alexwaldmann/C++/Game/src/GameLib/vector2d.cpp",
+  "output": "CMakeFiles/Game.dir/src/GameLib/vector2d.cpp.o"
+},
+{
+  "directory": "/Users/alexwaldmann/C++/Game/build",
+  "command": "/usr/bin/clang++  -I/Users/alexwaldmann/C++/Game/include/SDL2 -I/Users/alexwaldmann/C++/Game/src/EntityComponentSystem -I/Users/alexwaldmann/C++/Game/src/GameLib -I/Users/alexwaldmann/C++/Game/src/TextureSystem -I/Users/alexwaldmann/C++/Game/src -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -o CMakeFiles/Game.dir/src/TextureSystem/textureManager.cpp.o -c /Users/alexwaldmann/C++/Game/src/TextureSystem/textureManager.cpp",
+  "file": "/Users/alexwaldmann/C++/Game/src/TextureSystem/textureManager.cpp",
+  "output": "CMakeFiles/Game.dir/src/TextureSystem/textureManager.cpp.o"
+}
+]
